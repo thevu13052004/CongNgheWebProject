@@ -1,0 +1,47 @@
+body {
+  background-image: url("../../img/Menu/bg.jpeg");
+  background-size: cover;
+  background-position-y: -100px;
+}
+
+header {
+  background-color: rgb(1, 10, 10);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+#Logo {
+  padding: 5px 0px;
+}
+
+#Logo img {
+  max-width: 50px;
+  height: auto;
+}
+
+#Menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Menu li a {
+  color: #f8f8f8;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+#Menu li a:hover {
+  background-color: #358ad8;
+}

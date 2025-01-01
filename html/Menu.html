@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheVu</title>
+    <style>
+      * {
+        margin: 0px auto;
+        padding: 0px;
+      }
+
+      .wrapper {
+        height: 800px;
+        width: 1089px;
+        background-color: antiquewhite;
+      }
+
+      .menu {
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .menu li {
+        height: 50px;
+        width: 150px;
+        background-color: azure;
+        text-indent: 20px;
+        border: 1px dotted rgb(248, 71, 36);
+        position: absolute;
+        /* Giữ nguyên position absolute */
+      }
+
+      .menu li:hover {
+        background-color: aquamarine;
+      }
+
+      li:hover > a {
+        color: red;
+        font-weight: bold;
+      }
+
+      .menu li:nth-child(1) {
+        top: 10px;
+        left: 30px;
+        line-height: 50px;
+        /* transform: rotate(20deg); */
+        /* Di chuyển item đầu tiên sang trái */
+      }
+
+      li a {
+        text-decoration: none;
+        color: rgb(9, 2, 2);
+      }
+
+      .menu li:nth-child(2) {
+        top: 10px;
+        left: 213px;
+        line-height: 50px;
+        /* Di chuyển item thứ hai sang phải 160px */
+      }
+
+      .menu li:nth-child(3) {
+        top: 10px;
+        left: 394px;
+        line-height: 50px;
+        /* Di chuyển item thứ ba sang phải 320px */
+      }
+
+      .menu li:nth-child(4) {
+        top: 10px;
+        left: 576px;
+        line-height: 50px;
+        /* Di chuyển item thứ tư sang phải 480px */
+      }
+
+      .menu li:nth-child(5) {
+        top: 10px;
+        left: 758px;
+        line-height: 50px;
+        /* Di chuyển item thứ năm sang phải 640px */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="wrapper">
+        <nav>
+          <ul class="menu">
+            <li><a href="#">ITEM1</a></li>
+            <li><a href="#">ITEM2</a></li>
+            <li><a href="#">ITEM3</a></li>
+            <li><a href="#">ITEM4</a></li>
+            <li><a href="#">ITEM5</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
